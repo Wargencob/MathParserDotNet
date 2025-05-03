@@ -6,7 +6,7 @@ namespace MathParser
     {
         static void Main(string[] args)
         {
-            string expressionText = "5 + ((1 + 2) * 4) - 3";
+            string expressionText = "(1 + 1)^2";
 
             StringBuilder r = new StringBuilder(); 
 

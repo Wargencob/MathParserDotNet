@@ -48,6 +48,12 @@ public static class TokenAnalyser
                         pos++;
                         break;
                     }
+                case '^':
+                    {
+                        tokens.Add(new Token(TokenType.LEX_POW, c.ToString()));
+                        pos++;
+                        break;
+                    }
                 default:
                     {
                         if (text[pos] >= '0' && text[pos] <= '9')

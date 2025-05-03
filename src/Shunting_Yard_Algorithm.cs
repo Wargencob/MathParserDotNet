@@ -39,6 +39,7 @@ public class Shunting_Yard_Algorithm
                 case TokenType.LEX_MINUS:
                 case TokenType.LEX_MUL:
                 case TokenType.LEX_DIV:
+                case TokenType.LEX_POW:
                     while (stack.Count > 0 &&
                            stack.Peek().type != TokenType.LEFT_BRACKET &&
                            GetPrecedence(stack.Peek()) >= GetPrecedence(token))
@@ -70,6 +71,7 @@ public class Shunting_Yard_Algorithm
             TokenType.LEX_MINUS => 1,
             TokenType.LEX_MUL => 2,
             TokenType.LEX_DIV => 2,
+            TokenType.LEX_POW => 2,
             _ => 0
         };
     }

@@ -30,10 +30,11 @@ public static class TreeBuilder
             {
                 stack.Push(new NumberNode(token));
             }
-            else if (token.type == TokenType.LEX_PLUS || 
-                token.type == TokenType.LEX_MINUS || 
+            else if (token.type == TokenType.LEX_PLUS ||
+                token.type == TokenType.LEX_MINUS ||
                 token.type == TokenType.LEX_DIV ||
-                token.type == TokenType.LEX_MUL)
+                token.type == TokenType.LEX_MUL ||
+                token.type == TokenType.LEX_POW)
             {
                 var right = stack.Pop();
                 var left = stack.Pop();
@@ -78,6 +79,7 @@ static class Evalutetor
                 "-" => Evaluate(b.Left) - Evaluate(b.Right),
                 "*" => Evaluate(b.Left) * Evaluate(b.Right),
                 "/" => Evaluate(b.Left) / Evaluate(b.Right),
+                "^" => Math.Pow(Evaluate(b.Left), Evaluate(b.Right))
             },
 
             _ => throw new InvalidOperationException("Unknown node type")

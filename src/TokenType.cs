@@ -7,5 +7,6 @@
     LEX_MUL,
     LEX_DIV,
     NUMBER,
-    EOF
+    LEX_POW,
+    EOF,
 }
