@@ -5,7 +5,6 @@ public static class TokenAnalyser
     internal static List<Token> Analys(string text)
     {
         List<Token> tokens = new List<Token>();
-        Console.WriteLine(text.Length);
         int pos = 0;
 
         while (pos < text.Length)

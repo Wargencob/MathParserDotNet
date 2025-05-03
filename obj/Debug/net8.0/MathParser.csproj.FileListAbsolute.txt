@@ -12,3 +12,4 @@ C:\Users\gleb1\source\repos\MathParser\MathParser\obj\Debug\net8.0\refint\MathPa
 C:\Users\gleb1\source\repos\MathParser\MathParser\obj\Debug\net8.0\MathParser.pdb
 C:\Users\gleb1\source\repos\MathParser\MathParser\obj\Debug\net8.0\MathParser.genruntimeconfig.cache
 C:\Users\gleb1\source\repos\MathParser\MathParser\obj\Debug\net8.0\ref\MathParser.dll
+C:\Users\gleb1\source\repos\MathParser\MathParser\obj\Debug\net8.0\MathParser.sourcelink.json

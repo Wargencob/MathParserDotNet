@@ -11,10 +11,9 @@ public class Shunting_Yard_Algorithm
         stack = new Stack<Token>();
     }
 
-    public string Algorithm(List<Token> inputTokens)
+    public List<Token> Algorithm(List<Token> inputTokens)
     {
         List<Token> output = new List<Token>();
-        StringBuilder result = new StringBuilder();
 
         foreach (var token in inputTokens)
         {
@@ -60,12 +59,7 @@ public class Shunting_Yard_Algorithm
             }
         }
 
-        foreach (var t in output)
-        {
-            result.Append(t.value);
-        }
-
-        return result.ToString().Trim();
+        return output;
     }
 
     private int GetPrecedence(Token token)
